@@ -33,7 +33,7 @@ function FilterElements(arr, startFrom)
     }
 
     var nextStartFrom = startFrom;
-    for (i = startFromIndex + 1; i < arr.length; i++)
+    for (i = startFromIndex + 1; i <= arr.length/2; i++)
     {
         if (arr[i] !== 0)
         {
