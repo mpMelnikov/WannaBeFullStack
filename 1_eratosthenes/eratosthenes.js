@@ -1,7 +1,7 @@
 function EratosthenesSieve(max)
 {
-    arr = [];
-    index = 0;
+    var arr = [];
+    var index = 0;
     for (i = 2; i <= max; ++i)
     {
         arr[index] = i;
@@ -10,12 +10,12 @@ function EratosthenesSieve(max)
 
     arr = FilterElements(arr, 2);
 
-    return arr.filter(i => i !== 0);
+    return arr.filter(function(i) { return i !== 0;});
 }
 
 function FilterElements(arr, startFrom)
 {
-    startFromIndex = 0;
+    var startFromIndex = 0;
     for (i = 0; i < arr.length; i++)
     {
         if (arr[i] === startFrom)
