@@ -1,0 +1,15 @@
+{
+  "name": "1_eratosthenes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "eratosthenes.js",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.15.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

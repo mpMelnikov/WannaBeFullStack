@@ -2,7 +2,7 @@ function EratosthenesSieve(max)
 {
     var arr = [];
     var index = 0;
-    for (i = 2; i <= max; ++i)
+    for (var i = 2; i <= max; ++i)
     {
         arr[index] = i;
         index++;
