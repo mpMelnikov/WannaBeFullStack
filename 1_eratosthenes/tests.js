@@ -1,12 +1,12 @@
 function EqualArrays(expected, actual)
 {
     assert.equal(expected.length, actual.length);
-    for(i = 0; i < expected.length; ++i){
+    for(var i = 0; i < expected.length; ++i){
         assert.equal(expected[i], actual[i]);
     }    
 }
 
-describe("Find primes with EratosthenesSieve", function() {
+describe("Find primes with EratosthenesSieve", function() { 
     it("2", function() {
         EqualArrays([2], EratosthenesSieve(2));
     });
@@ -53,5 +53,21 @@ describe("Find primes with EratosthenesSieve", function() {
 
     it("100", function() {
         EqualArrays([2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97], EratosthenesSieve(100));
+    });
+
+    it("EratosthenesSieveByIndex. max = 2, index = 0", function() {
+        assert.equal(2, EratosthenesSieveByIndex(0, 2));
+    });
+
+    it("EratosthenesSieveByIndex. max = 100, index = 5", function() {
+        assert.equal(13, EratosthenesSieveByIndex(5, 100));
+    });
+
+    it("EratosthenesSieveByIndex. Invalid max and index combination, -1 returned", function() {
+        assert.equal(-1, EratosthenesSieveByIndex(5, 5));
+    });
+
+    it("EratosthenesSieveByIndex. Invalid max and index combination, -1 returned", function() {
+        assert.equal(-1, EratosthenesSieveByIndex(5, 6));
     });
 });

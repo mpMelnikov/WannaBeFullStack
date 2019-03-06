@@ -1,3 +1,21 @@
+// eslint-disable-next-line no-unused-vars
+function EratosthenesSieveByIndex(index, max)
+{
+    if (index >= max)
+    {
+        return -1;
+    }
+
+    var arr = EratosthenesSieve(max);
+    if (index >= arr.length)
+    {
+        return -1;
+    }
+
+    return arr[index];
+}
+
+// eslint-disable-next-line no-unused-vars
 function EratosthenesSieve(max)
 {
     var arr = [];
