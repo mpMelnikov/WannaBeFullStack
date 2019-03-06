@@ -62,4 +62,12 @@ describe("Find primes with EratosthenesSieve", function() {
     it("EratosthenesSieveByIndex. max = 100, index = 5", function() {
         assert.equal(13, EratosthenesSieveByIndex(5, 100));
     });
+
+    it("EratosthenesSieveByIndex. Invalid max and index combination, -1 returned", function() {
+        assert.equal(-1, EratosthenesSieveByIndex(5, 5));
+    });
+
+    it("EratosthenesSieveByIndex. Invalid max and index combination, -1 returned", function() {
+        assert.equal(-1, EratosthenesSieveByIndex(5, 6));
+    });
 });
