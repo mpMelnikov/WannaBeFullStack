@@ -8,10 +8,6 @@ function EqualArrays(expected, actual)
 
 describe("Find primes with EratosthenesSieve", function() { 
     it("2", function() {
-        EqualArrays(2, EratosthenesSieveByIndex(0, 2));
-    });
-
-    it("2", function() {
         EqualArrays([2], EratosthenesSieve(2));
     });
 
